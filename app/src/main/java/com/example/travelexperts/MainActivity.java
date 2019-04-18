@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
     public void LoginCustomer(View view)
     {
         //Json call to login customer
-        Intent CustomerDashboard = new Intent(this, CustomerDashboard.class);
+        // before allowing the user to login
+
+        Intent CustomerDashboard = new Intent(this, com.example.travelexperts.activities.CustomerDashboard.class);
         startActivity(CustomerDashboard);
+
     }
 }

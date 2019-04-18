@@ -20,5 +20,11 @@
     <color name="login_color_accent">#ff4081</color>
     <color name="pink">#fe104d</color>
 
+    <!--package row item colors -->
+    <color name="package_row_primary">#00aff0</color>
+    <color name="package_row_primary_dark">#097fb2</color>
+    <color name="package_row_color_accent">#ff4081</color>
+
+
 
 </resources>
