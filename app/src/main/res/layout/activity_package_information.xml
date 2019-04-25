@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:id="@+id/collapsingtoolbar_id"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title="Anime Title"
+            app:title="Package Name"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
@@ -40,11 +40,11 @@
                 >
 
 
-                <ImageView
+                <!-- ImageView
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/loading_shape"
-                    android:id="@+id/aa_thumbnail"/>
+                    android:id="@+id/aa_thumbnail" -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -56,8 +56,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/aa_anime_name"
-                        android:text="Anime Title"
+                        android:id="@+id/aa_package_name"
+                        android:text="Package Name"
                         android:textStyle="bold"
                         android:textSize="18sp"/>
 
@@ -65,11 +65,16 @@
                         android:layout_marginTop="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Category"
-                        android:id="@+id/aa_categorie"/>
-
-
+                        android:text="Start Date"
+                        android:id="@+id/aa_start_date"/>
                     <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End Date"
+                        android:id="@+id/aa_end_date"/>
+
+                    <!--TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/aa_rating"
@@ -80,14 +85,14 @@
                         android:textSize="15sp"
                         android:textStyle="bold"
                         android:drawableLeft="@drawable/ic_star_black_24dp"
-                        android:paddingRight="5dp"/>
+                        android:paddingRight="5dp"-->
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Studio"
+                        android:text="Price"
                         android:layout_marginTop="5dp"
-                        android:id="@+id/aa_studio"/>
+                        android:id="@+id/aa_price"/>
 
 
 
@@ -112,7 +117,7 @@
 
         <TextView
             android:textColor="#fff"
-            android:text="Anime Description"
+            android:text="Package Description"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/aa_description"/>

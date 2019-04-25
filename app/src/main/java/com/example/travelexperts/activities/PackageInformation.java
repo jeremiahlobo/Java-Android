@@ -22,33 +22,35 @@ public class PackageInformation extends AppCompatActivity {
 
         // Recieve data
 
-        String name  = getIntent().getExtras().getString("anime_name");
-        String description = getIntent().getExtras().getString("anime_description");
-        String studio = getIntent().getExtras().getString("anime_studio") ;
-        String category = getIntent().getExtras().getString("anime_category");
-        int nb_episode = getIntent().getExtras().getInt("anime_nb_episode") ;
-        String rating = getIntent().getExtras().getString("anime_rating") ;
-        String image_url = getIntent().getExtras().getString("anime_img") ;
+        String name  = getIntent().getExtras().getString("package_name");
+        String description = getIntent().getExtras().getString("package_description");
+        String package_price = getIntent().getExtras().getString("package_price");
+        String package_start_date = getIntent().getExtras().getString("package_start_date");
+        String package_end_date = getIntent().getExtras().getString("package_end_date");
+        //String rating = getIntent().getExtras().getString("anime_rating") ;
+        //String image_url = getIntent().getExtras().getString("anime_img") ;
 
         // ini views
 
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar_id);
         collapsingToolbarLayout.setTitleEnabled(true);
 
-        TextView tv_name = findViewById(R.id.aa_anime_name);
-        TextView tv_studio = findViewById(R.id.aa_studio);
-        TextView tv_categorie = findViewById(R.id.aa_categorie) ;
+        TextView tv_name = findViewById(R.id.aa_package_name);
+        TextView tv_studio = findViewById(R.id.aa_price);
+        TextView tv_start_date = findViewById(R.id.aa_start_date) ;
+        TextView tv_end_date = findViewById(R.id.aa_end_date) ;
         TextView tv_description = findViewById(R.id.aa_description);
-        TextView tv_rating  = findViewById(R.id.aa_rating) ;
-        ImageView img = findViewById(R.id.aa_thumbnail);
+        //TextView tv_rating  = findViewById(R.id.aa_rating) ;
+        //ImageView img = findViewById(R.id.aa_thumbnail);
 
         // setting values to each view
 
         tv_name.setText(name);
-        tv_categorie.setText(category);
+        tv_start_date.setText(package_start_date);
+        tv_end_date.setText(package_end_date);
         tv_description.setText(description);
-        tv_rating.setText(rating);
-        tv_studio.setText(studio);
+        //tv_rating.setText(rating);
+        tv_studio.setText(package_price);
 
         collapsingToolbarLayout.setTitle(name);
 
@@ -57,6 +59,6 @@ public class PackageInformation extends AppCompatActivity {
 
 
         // set image using Glide
-        Glide.with(this).load(image_url).apply(requestOptions).into(img);
+        //Glide.with(this).load(image_url).apply(requestOptions).into(img);
     }
 }
