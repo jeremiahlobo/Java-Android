@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <color name="colorPrimary">#4c84ff</color>
-    <color name="colorPrimaryDark">#ffffff</color>
-    <color name="colorAccent">#000</color>
+    <color name="colorPrimary">#0097a7</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
 
     <!-- colors of button style-->
-    <color name="gradient_start_color">#4c84ff</color>
-    <color name="gradient_end_color">#18a3fe</color>
+    <color name="gradient_start_color">#149EE7</color>
+    <color name="gradient_end_color">#149EE7</color>
 
     <!-- colors for tab and screen text-->
     <color name="tab_indicator_gray">#c0c0c0</color>
     <color name="intro_title_color">#000000</color>
-    <color name="intro_description_color">#656565</color>
+    <color name="intro_description_color">#fff</color>
 
     <!--login colors-->
-    <color name="login_primary">#3F51b5</color>
-    <color name="login_primary_dark">#23283a</color>
+    <color name="login_primary">#008080</color>
+    <color name="login_primary_dark">#004747</color>
     <color name="login_color_accent">#ff4081</color>
     <color name="pink">#fe104d</color>
 
     <!--package row item colors -->
-    <color name="package_row_primary">#00aff0</color>
-    <color name="package_row_primary_dark">#097fb2</color>
+    <color name="package_row_primary">#7B52CF</color>
+    <color name="package_row_primary_dark">#56c8d8</color>
     <color name="package_row_color_accent">#ff4081</color>
-
-
 
 </resources>

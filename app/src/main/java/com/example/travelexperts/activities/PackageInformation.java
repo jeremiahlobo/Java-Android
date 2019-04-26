@@ -15,8 +15,7 @@ public class PackageInformation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_package_information);
-
-        //hide the default action bar
+        //hide the action bar
 
         getSupportActionBar().hide();
 

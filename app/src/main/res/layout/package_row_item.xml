@@ -5,9 +5,8 @@
     android:layout_height="150dp"
     android:layout_marginTop="5dp"
     android:padding="8dp"
-    android:background="#c0c0c0"
-    android:id="@+id/container"
-    >
+    android:background="#0097a7"
+    android:id="@+id/container">
 
     <ImageView
         android:layout_width="100dp"
@@ -24,7 +23,7 @@
         >
 
         <TextView
-            android:textColor="#fff"
+            android:textColor="#FCFCFC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/package_name"
@@ -35,14 +34,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:textColor="#fff"
+            android:textColor="#000000"
             android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start Date"
             android:id="@+id/package_start_date"/>
         <TextView
-            android:textColor="#fff"
+            android:textColor="#000000"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
@@ -50,26 +49,27 @@
             android:text="End Date"
             android:id="@+id/package_end_date"/>
     </LinearLayout>
-
+        <!--star rating-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rating"
-            android:text="0.0"
+            android:text="5.0"
             android:layout_marginTop="10dp"
             android:background="@drawable/rating_background"
-            android:textColor="#fff"
+            android:textColor="#000000"
             android:textSize="15sp"
             android:textStyle="bold"
             android:drawableLeft="@drawable/ic_star_black_24dp"
             android:paddingRight="5dp"/>
 
         <TextView
-            android:textColor="#fff"
+            android:textColor="#000000"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Price"
             android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_attach_money_black_24dp"
             android:id="@+id/package_price"/>
 
     </LinearLayout>
